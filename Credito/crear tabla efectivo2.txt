@@ -1,0 +1,24 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+CREATE TABLE `efectivo2` (
+  `folio` int(10) NOT NULL,
+  `numeroSocio` int(10) NOT NULL,
+  `nombreSocio` varchar(50) NOT NULL,
+  `importe` decimal(10,0) NOT NULL,
+  `fecha` date NOT NULL,
+  `tipoCredito` varchar(20) NOT NULL,
+  `ahorros` decimal(10,0) NOT NULL,
+  `interesOrd` varchar(10) NOT NULL,
+  `interesMora` varchar(10) NOT NULL,
+  `fechaVencimiento` varchar(20) NOT NULL,
+  `estado` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `efectivo2`
+  ADD PRIMARY KEY (`folio`);
+
+
+ALTER TABLE `efectivo2`
+  MODIFY `folio` int(10) NOT NULL AUTO_INCREMENT; 
